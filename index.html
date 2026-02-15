@@ -28,6 +28,105 @@ src="https://www.facebook.com/tr?id=1247847513953598&ev=PageView&noscript=1"
         </noscript>
 
     <style>
+        :root {
+            --primary-color: #E8783F; /* Laranja do site original */
+            --text-color: #333;
+            --bg-light: #fdfdfd;
+            --bg-section: #f4f4f4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { scroll-behavior: smooth; } /* Rolagem suave */
+
+        body {
+            font-family: 'Sarabun', 'Open Sans', sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--bg-light);
+        }
+
+        /* Container padrão */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Hero Section (Topo) */
+        header {
+            padding: 60px 20px;
+            background: linear-gradient(to bottom, #fff, #fffaf0);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subheadline {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Botão Principal */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px rgba(232, 120, 63, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(232, 120, 63, 0.6);
+        }
+
+        /* Imagem Ilustrativa */
+        .hero-img {
+            margin-top: 40px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            /* box-shadow: 0 10px 30px rgba(0,0,0,0.1); */
+        }
+
+        /* Seção de Problemas/Benefícios */
+        .section-content {
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .grid-benefits {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .benefit-card {
+            background: var(--bg-section);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .benefit-card h3 { color: var(--primary-color); margin-bottom: 10px; }
         /* --- NOVO ESTILO PARA 2 OFERTAS --- */
 .pricing-grid {
     display: flex;
